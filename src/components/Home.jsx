@@ -8,6 +8,10 @@ const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
     },
+    card:{
+        flexGrow:1,
+        height:400,
+    },
     menuButton: {
       marginRight: theme.spacing(2),
     },
@@ -59,7 +63,7 @@ function CenterCard(){
     <div className={classes.root}>
         <Grid container spacing={2}>
             <Grid item xs={6}>
-                <Card className={classes.root}>
+                <Card className={classes.card}>
                     <CardActionArea>
                         <CardMedia
                         className={classes.media}
@@ -85,7 +89,7 @@ function CenterCard(){
                 </Card>
             </Grid>
             <Grid item xs={6}>
-            <Card className={classes.root}>
+            <Card className={classes.card}>
                     <CardActionArea>
                         <CardMedia
                         className={classes.media}
