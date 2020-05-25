@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
     },
     card:{
         flexGrow:1,
-        height:400,
     },
     menuButton: {
       marginRight: theme.spacing(2),
