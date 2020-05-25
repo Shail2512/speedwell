@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
     },
     card:{
         flexGrow:1,
+        minWidth:300,
     },
     menuButton: {
       marginRight: theme.spacing(2),
@@ -24,7 +25,13 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.text.secondary,
       },
       media: {
-        height: 300,
+        minWidth : 300,
+        minHeight : 300,
+      },
+      grid:{
+        minWidth:300,
+        // alignContent: 'flex',
+        alignItems:'flex-end',
       },
   }));
 
@@ -60,8 +67,8 @@ function CenterCard(){
     const classes=useStyles();
     return(
     <div className={classes.root}>
-        <Grid container spacing={2}>
-            <Grid item xs={6}>
+        <Grid container spacing={2} >
+            <Grid item xs={6} className = {classes.grid}>
                 <Card className={classes.card}>
                     <CardActionArea>
                         <CardMedia
@@ -75,8 +82,7 @@ function CenterCard(){
                             Vector X
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                        With the growing demand of good health and fitness, Vector X comes up with innovations each day. Whether it’s hard core fitness or trying your hands on your favorite sport, we are there for you. 
-                        We have taken upon ourselves to make sure you are always young and fit.
+                        With the growing demand of good health and fitness, Vector X comes up with innovations each day. Whether it’s hard core fitness or trying your hands on your favorite sport, VectorX is there for you. 
                         </Typography>
                         </CardContent>
                     </CardActionArea>
@@ -87,7 +93,7 @@ function CenterCard(){
                     </CardActions>
                 </Card>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={6} className = {classes.grid}>
             <Card className={classes.card}>
                     <CardActionArea>
                         <CardMedia
