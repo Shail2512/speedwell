@@ -127,8 +127,8 @@ const CreateDrawer = (props) => {
               onClick={()=>{props.updateState(true)}} />
 
               <Typography variant="h6" className={classes.title}>Speedwell Cycle Industries</Typography>
-              <a href="https://wa.me/9898714218">
-              <WhatsAppIcon style={{color:"green"}}/>
+              <a href="https://api.whatsapp.com/send?phone=+919898714218">
+              <WhatsAppIcon style={{color:"white",backgroundColor:"green"}}/>
           </a>
           </Grid>
         </Toolbar>
@@ -252,8 +252,8 @@ function ContactUs(){
           </div>
           <div>
           <PhoneIcon/> : +919898714218  
-          <a href="https://wa.me/9898714218">
-              <WhatsAppIcon style={{color:"green"}}/>
+          <a href="https://api.whatsapp.com/send?phone=+919898714218">
+              <WhatsAppIcon style={{color:"white",backgroundColor:"green"}}/>
           </a> <br/><br/>
           </div>
           <div>
