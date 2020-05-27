@@ -8,6 +8,7 @@ import TableTennisSet from './Images/tableTennisSet.jpeg';
 import FootBall from './Images/VectorX_cover.jpeg';
 import SkateBoard from './Images/skateBoard.jpeg';
 import VectorLogo from './Images/vectorLogo.jpeg';
+import BicycleHelmet from './Images/helmet.jpeg';
 const styleSheet = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -40,6 +41,7 @@ class VectorCatalog extends Component {
                 {image:TableTennisSet, name:'Table Tennis Set'},
                 {image:FootBall, name:'Football'},
                 {image:SkateBoard, name:'Skateboard'},
+                {image:BicycleHelmet, name:'Bicycle Helmet'},
             ]
         }
     }
@@ -68,7 +70,7 @@ const Catalog = (props) => {
                                         <CardMedia
                                         className={classes.media}
                                         component="img"
-                                        height="300"
+                                        height="400"
                                         image={p.image}
                                         // image="src\components\Images\VectorX_cover.jpeg"
                                         title={p.name}

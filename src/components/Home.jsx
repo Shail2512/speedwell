@@ -236,7 +236,7 @@ function CenterCard(){
                       <p style={{fontSize:20}}>Trusted brand in India for Tyre-Tubes</p>
                       <Typography variant="body2" color="textSecondary" component="p">
                           Hartex one of the leading manufacturers and exporters of quality bicycle tyres and tubes for more than 40 years now.
-                          We have the dealership of the tyres and tubes of bicycles, and upcoming auto tyre-tubes also.
+                         Also upcoming auto Tyre-Tubes.
                       </Typography>
                       </CardContent>
                   </CardActionArea>
