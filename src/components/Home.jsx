@@ -13,7 +13,10 @@ import MailIcon from '@material-ui/icons/Mail';
 import VectorCatalog from './VectorCatalog';
 import HartexCatalog from './HartexCatalog';
 const styleSheet = makeStyles((theme) => ({
-    home:{
+  main:{
+    color:'red',
+  },  
+  home:{
         fontSize:20,
     },
     root: {
@@ -72,11 +75,6 @@ class Home extends Component{
     constructor(props){
         super(props);
         this.state = {drawerActivate:false, drawer:false};
-        // this.createDrawer = this.createDrawer.bind(this);
-        // this.destroyDrawer = this.destroyDrawer.bind(this);
-        // this.centerCard = this.centerCard.bind(this);
-        // this.contactUs = this.contactUs.bind(this);
-        // this.errorComponent = this.errorComponent.bind(this);
         this.updateDrawer = this.updateDrawer.bind(this);
       }
     
@@ -99,7 +97,7 @@ class Home extends Component{
     updateDrawer = (text) => {this.setState({drawer:text})}
     render(){
         return(
-            <div style={{width:'100vw'}}>
+            <div className={this.props.classes.main}>
                 {this.state.drawerActivate ? <CreateDrawer updateState={this.updateDrawer} drawerState={this.state.drawer}/> : <DestroyDrawer/>}
                     <>
                         <Switch>
