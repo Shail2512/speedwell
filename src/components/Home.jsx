@@ -186,7 +186,7 @@ function CenterCard(){
   const classes=styleSheet();
   return(
   <div className={classes.root}>
-    <h3>Wholesale Supplier of VectorX and Hartex products</h3>
+    <h3>Wholesale Supplier of Vector-X and Hartex Products</h3>
       <Grid container alignItems="stretch" justify="center" spacing={2} >
           <Grid item  xs={6} className = {classes.grid}>
               <Card className={classes.card}>
@@ -200,10 +200,11 @@ function CenterCard(){
                       title="Vector X"
                       />
                       <CardContent>
-                      <img src={VectorLogo} width="20%" height="20%"/>
+                      <img src={VectorLogo} width="40%" height="20%"/>
                       {/* <Typography gutterBottom variant="h5" component="h2">
                           Vector X
                       </Typography> */}
+                      <p style={{fontSize:20}}>India's leading brand in sports goods</p>
                       <Typography variant="body2" color="textSecondary" component="p">
                       With the growing demand of good health and fitness, Vector X comes up with innovations each day. Whether it’s hard core fitness or trying your hands on your favorite sport, VectorX is there for you. 
                       </Typography>
@@ -228,13 +229,14 @@ function CenterCard(){
                       title="Hartex"
                       />
                       <CardContent>
-                      <img src={HartexLogo} width="20%" height="15%"/>
+                      <img src={HartexLogo} width="40%" height="15%"/>
                       {/* <Typography gutterBottom variant="h5" component="h2">
                           Hartex
                       </Typography> */}
+                      <p style={{fontSize:20}}>Trusted brand in India for Tyre-Tubes</p>
                       <Typography variant="body2" color="textSecondary" component="p">
                           Hartex one of the leading manufacturers and exporters of quality bicycle tyres and tubes for more than 40 years now.
-                          We have the dealership of the tyres of tractors, trucks, two-wheelers, and bicycles.
+                          We have the dealership of the tyres and tubes of bicycles, and upcoming auto tyre-tubes also.
                       </Typography>
                       </CardContent>
                   </CardActionArea>
@@ -255,7 +257,7 @@ function ContactUs(){
       <div style={{alignContent: "center"}}>
           <h3>Contact Us : </h3>
           <div>
-            <LocationOnIcon/> : 1104, Sangita Complex, <br/>Ambawadi, <br/>Ahmedabad-380006, <br/>Gujarat <br/><br/>
+            <LocationOnIcon/> : 1104, Sangita Complex, <br/> Opp. Doctor House, <br/>Ambawadi, <br/>Ahmedabad-380006, <br/>Gujarat <br/><br/>
           </div>
           <div>
           <PhoneIcon/> : +919898714218  
