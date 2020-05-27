@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8f208b2f501216f341151faf3f4a1bcb",
+    "revision": "1c9c4ecc19ae1578aacc960795553bb3",
     "url": "/index.html"
   },
   {
-    "revision": "9b7c9c55343665f6e13e",
+    "revision": "59f990a1242c8c647393",
     "url": "/static/css/main.5fb4e0ed.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.90e4dd9e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9b7c9c55343665f6e13e",
-    "url": "/static/js/main.e9ee7f7c.chunk.js"
+    "revision": "59f990a1242c8c647393",
+    "url": "/static/js/main.533c7b41.chunk.js"
   },
   {
     "revision": "c815442ab336b747f527",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7adbb9932a22862abad524ff7b074e73",
     "url": "/static/media/cricketKit.7adbb993.jpeg"
+  },
+  {
+    "revision": "8561232d00129ea43eafc2cbded7eabe",
+    "url": "/static/media/hartexLogo.8561232d.jpeg"
   },
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
@@ -52,7 +56,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/tennisBall.9251ed72.jpeg"
   },
   {
-    "revision": "9f07adb773ca760c646b33dae94e9bc4",
-    "url": "/static/media/vectorLogo.9f07adb7.jpeg"
+    "revision": "1e275ffa301d4bab2307b087b6cd9499",
+    "url": "/static/media/vectorLogo.1e275ffa.jpeg"
   }
 ]);
