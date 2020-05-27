@@ -1,16 +1,25 @@
 import React,{Component} from 'react';
-import { AppBar, Toolbar, Typography, Button, makeStyles, Paper, Grid, Card, CardActionArea, CardMedia,CardContent, CardActions} from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Button,List, ListItem, withStyles, SwipeableDrawer, makeStyles, Link, Grid, Card, CardActionArea, CardMedia,CardContent, CardActions} from '@material-ui/core';
 import './Home.css';
+import PropTypes from 'prop-types';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import Vector from './Images/VectorX_cover.jpeg';
 import Hartex from './Images/hartex.jpg'
-
-const useStyles = makeStyles((theme) => ({
+import MenuIcon from '@material-ui/icons/Menu';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import PhoneIcon from '@material-ui/icons/Phone';
+import MailIcon from '@material-ui/icons/Mail';
+const styleSheet = makeStyles((theme) => ({
+    home:{
+        fontSize:20,
+    },
     root: {
       flexGrow: 1,
     },
     card:{
         flexGrow:1,
-        minWidth:300,
+        minWidth:300
     },
     menuButton: {
       marginRight: theme.spacing(2),
@@ -32,98 +41,228 @@ const useStyles = makeStyles((theme) => ({
         minWidth:300,
         // alignContent: 'flex',
         alignItems:'flex-end',
+        padding:'10'
       },
+      list : {
+        width : 200,
+      },
+      padding : {
+        paddingRight : 30,
+        cursor : "pointer",
+      },
+    
+      sideBarIcon : {
+        padding : 0,
+        color : "white",
+        cursor : "pointer",
+      },
+
+      toolBar : {
+        // backgroundColor: "rgb(24, 174, 224)",
+        // backgroundColor: "green"
+    }
+    
   }));
 
 class Home extends Component{
+    constructor(props){
+        super(props);
+        this.state = {drawerActivate:false, drawer:false};
+        // this.createDrawer = this.createDrawer.bind(this);
+        // this.destroyDrawer = this.destroyDrawer.bind(this);
+        // this.centerCard = this.centerCard.bind(this);
+        // this.contactUs = this.contactUs.bind(this);
+        // this.errorComponent = this.errorComponent.bind(this);
+        this.updateDrawer = this.updateDrawer.bind(this);
+      }
+    
+      componentWillMount(){
+        if(window.innerWidth <= 600){
+          this.setState({drawerActivate:true});
+        }
+    
+        window.addEventListener('resize',()=>{
+          if(window.innerWidth <= 600){
+            this.setState({drawerActivate:true});
+          }
+          else{
+            this.setState({drawerActivate:false})
+          }
+        });
+      }
+    
+      
+    updateDrawer = (text) => {this.setState({drawer:text})}
     render(){
         return(
-            <div className="Home">
-                <NavigationBar/>
-                <CenterCard/>
+            <div>
+                {this.state.drawerActivate ? <CreateDrawer updateState={this.updateDrawer} drawerState={this.state.drawer}/> : <DestroyDrawer/>}
+                <Router>
+                    <>
+                        <Switch>
+                            <Route path="/" exact component={CenterCard}/>
+                            <Route path="/about" component={CenterCard}/>
+                            <Route path="/contact" component={ContactUs}/>
+                            <Route component={ErrorComponent}/>
+                        </Switch>
+                    </>
+                </Router>
             </div>
 
         );
     }
 }
 
-function NavigationBar(){
-    const classes = useStyles();
-    return (
+const CreateDrawer = (props) => {
+  const classes = styleSheet()
+  return (
     <div className={classes.root}>
-        <AppBar position="static">
-        <Toolbar>
-            <Typography variant="h6" className={classes.title}>
-            Speedwell Cycle Industries
-            </Typography>
-            Contact Us : +919898714218 / raval104@yahoo.co.in
-        </Toolbar>
-        </AppBar>
-    </div>
-    );
-    }
+      <AppBar position="static">
+        <Toolbar className={classes.toolbar}>
+          <Grid container direction = "row" justify = "space-between" alignItems="center">
+            <MenuIcon
+              className = {classes.sideBarIcon}
+              onClick={()=>{props.updateState("true")}} />
 
-function CenterCard(){
-    const classes=useStyles();
-    return(
-    <div className={classes.root}>
-        <Grid container spacing={2} >
-            <Grid item xs={6} className = {classes.grid}>
-                <Card className={classes.card}>
-                    <CardActionArea>
-                        <CardMedia
-                        className={classes.media}
-                        image={Vector}
-                        // image="src\components\Images\VectorX_cover.jpeg"
-                        title="Vector X"
-                        />
-                        <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
-                            Vector X
-                        </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                        With the growing demand of good health and fitness, Vector X comes up with innovations each day. Whether it’s hard core fitness or trying your hands on your favorite sport, VectorX is there for you. 
-                        </Typography>
-                        </CardContent>
-                    </CardActionArea>
-                    <CardActions>
-                        <Button size="small" color="primary">
-                        Browse
-                        </Button>
-                    </CardActions>
-                </Card>
-            </Grid>
-            <Grid item xs={6} className = {classes.grid}>
-            <Card className={classes.card}>
-                    <CardActionArea>
-                        <CardMedia
-                        className={classes.media}
-                        image={Hartex}
-                        // image="src\components\Images\VectorX_cover.jpeg"
-                        title="Hartex"
-                        />
-                        <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
-                            Hartex
-                        </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            Hartex one of the leading manufacturers and exporters of quality bicycle tyres and tubes for more than 40 years now.
-                            We have the dealership of the tyres of tractors, trucks, two-wheelers, and bicycles.
-                        </Typography>
-                        </CardContent>
-                    </CardActionArea>
-                    <CardActions>
-                        <Button size="small" color="primary">
-                        Browse
-                        </Button>
-                    </CardActions>
-                </Card>
-            </Grid>
-        </Grid>
+              <Typography variant="h6" className={classes.title}>Speedwell Cycle Industries</Typography>
+          </Grid>
+        </Toolbar>
+      </AppBar>
+
+      <SwipeableDrawer
+       open={props.drawerState}
+       onClose={()=>{props.updateState("false")}}
+       onOpen={()=>{props.updateState("true")}}>
+
+         <div
+           tabIndex={0}
+           role="button"
+           onClick={()=>{props.updateState("false")}}
+           onKeyDown={()=>{props.updateState("true")}}>
+
+          <List className = {classes.list}>
+             <ListItem key = {1} button divider><Link href="/about" color="inherit">About </Link> </ListItem>
+             <ListItem key = {2} button divider><Link href="/contact" color="inherit">Contact Us </Link> </ListItem>
+           </List>
+
+       </div>
+     </SwipeableDrawer>
+
     </div>
-    );
+  );
 }
 
+//Larger Screens
+function DestroyDrawer(){
+  const classes = styleSheet();
+  // const preventDefault = (event) => event.preventDefault();
+  return (
+  <div className={classes.root}>
+      <AppBar position="static">
+      <Toolbar className={classes.toolBar}>
+          <Typography variant="h6" className={classes.title}>
+          Speedwell Cycle Industries
+          </Typography>
+          <Button color="inherit" href="/about">About</Button>
+          <Button color="inherit" href="/contact">Contact Us</Button>
+      </Toolbar>
+      </AppBar>
+  </div>
+  );
+}
 
+function CenterCard(){
+  const classes=styleSheet();
+  return(
+  <div className={classes.root}>
+      <Grid container alignItems="stretch" justify="center" spacing={2} >
+          <Grid item  xs={6} className = {classes.grid}>
+              <Card className={classes.card}>
+                  <CardActionArea>
+                      <CardMedia
+                      className={classes.media}
+                      component="img"
+                      height="300"
+                      image={Vector}
+                      // image="src\components\Images\VectorX_cover.jpeg"
+                      title="Vector X"
+                      />
+                      <CardContent>
+                      <Typography gutterBottom variant="h5" component="h2">
+                          Vector X
+                      </Typography>
+                      <Typography variant="body2" color="textSecondary" component="p">
+                      With the growing demand of good health and fitness, Vector X comes up with innovations each day. Whether it’s hard core fitness or trying your hands on your favorite sport, VectorX is there for you. 
+                      </Typography>
+                      </CardContent>
+                  </CardActionArea>
+                  <CardActions>
+                      <Button size="small" color="primary">
+                      Browse
+                      </Button>
+                  </CardActions>
+              </Card>
+          </Grid>
+          <Grid item xs={6} className = {classes.grid}>
+          <Card className={classes.card}>
+                  <CardActionArea>
+                      <CardMedia
+                      className={classes.media}
+                      component="img"
+                      height="300"
+                      image={Hartex}
+                      // image="src\components\Images\VectorX_cover.jpeg"
+                      title="Hartex"
+                      />
+                      <CardContent>
+                      <Typography gutterBottom variant="h5" component="h2">
+                          Hartex
+                      </Typography>
+                      <Typography variant="body2" color="textSecondary" component="p">
+                          Hartex one of the leading manufacturers and exporters of quality bicycle tyres and tubes for more than 40 years now.
+                          We have the dealership of the tyres of tractors, trucks, two-wheelers, and bicycles.
+                      </Typography>
+                      </CardContent>
+                  </CardActionArea>
+                  <CardActions>
+                      <Button size="small" color="primary">
+                      Browse
+                      </Button>
+                  </CardActions>
+              </Card>
+          </Grid>
+      </Grid>
+  </div>
+  );
+}
 
-export default Home
+function ContactUs(){
+  return(
+      <div style={{alignContent: "center"}}>
+          <h3>Contact Us : </h3>
+          <div>
+            <LocationOnIcon/> : 1104, Sangita Complex, <br/>Ambawadi, <br/>Ahmedabad-380006, <br/>Gujarat <br/><br/>
+          </div>
+          <div>
+          <PhoneIcon/> : +919898714218  
+          <Link href="https://api.whatsapp.com/send?phone=+919898714218">
+              <WhatsAppIcon style={{color:"green"}}/>
+          </Link> <br/><br/>
+          </div>
+          <div>
+          <MailIcon/> : raval104@yahoo.co.in     
+          </div>
+      </div>
+  );
+}
+
+function ErrorComponent(){
+  return <div>Error Occured.... Invalid URL</div>
+}
+
+Home.propTypes = {
+    classes : PropTypes.object.isRequired
+};
+
+export default withStyles(styleSheet)(Home);
+// export default Home;
