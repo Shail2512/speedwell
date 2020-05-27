@@ -247,9 +247,9 @@ function ContactUs(){
           </div>
           <div>
           <PhoneIcon/> : +919898714218  
-          <Link href="https://api.whatsapp.com/send?phone=+919898714218">
+          <a href="https://api.whatsapp.com/send?phone=+919898714218">
               <WhatsAppIcon style={{color:"green"}}/>
-          </Link> <br/><br/>
+          </a> <br/><br/>
           </div>
           <div>
           <MailIcon/> : raval104@yahoo.co.in     
