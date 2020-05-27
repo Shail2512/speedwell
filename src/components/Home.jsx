@@ -10,6 +10,8 @@ import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail';
+import VectorCatalog from './VectorCatalog';
+import HartexCatalog from './HartexCatalog';
 const styleSheet = makeStyles((theme) => ({
     home:{
         fontSize:20,
@@ -19,7 +21,8 @@ const styleSheet = makeStyles((theme) => ({
     },
     card:{
         // flexGrow:1,
-        minWidth:300
+        minWidth:300,
+        height:"100%",
     },
     menuButton: {
       marginRight: theme.spacing(2),
@@ -107,6 +110,8 @@ class Home extends Component{
                             <Route path="/" exact><p><CenterCard/></p></Route>
                             <Route path="/about" exact><p><CenterCard/></p></Route>
                             <Route path="/contact" exact><ContactUs/></Route>
+                            <Route path="/vector" exact><VectorCatalog/></Route>
+                            <Route path="/hartex" exact><HartexCatalog/></Route>
                         </Switch>
                     </>
             </div>
@@ -145,8 +150,8 @@ const CreateDrawer = (props) => {
            onClick={()=>{props.updateState(false)}}
            onKeyDown={()=>{props.updateState(false)}}>
           <List className = {classes.list}>
-             <ListItem key = {1} button divider><Link to="/about" color="inherit">About </Link> </ListItem>
-             <ListItem key = {2} button divider><Link to="/contact" color="inherit">Contact Us </Link> </ListItem>
+             <ListItem key = {1} button divider><Link to="/about" color="inherit" style={{textDecoration: 'none'}}>About </Link> </ListItem>
+             <ListItem key = {2} button divider><Link to="/contact" color="inherit" style={{textDecoration: 'none'}}>Contact Us </Link> </ListItem>
            </List>
 
        </div>
@@ -169,8 +174,8 @@ function DestroyDrawer(){
           </Typography>
           {/* <Button color="inherit" to="/about">About</Button>
           <Button color="inherit" to="/contact">Contact Us</Button> */}
-          <Button color="inherit"><Link to="/about" style={{color:'white'}}>About </Link></Button>
-          <Button color="inherit"><Link to="/contact" style={{color:'white'}}>Contact Us </Link></Button>
+          <Button color="inherit"><Link to="/about" style={{color:'white',textDecoration: 'none'}}>About </Link></Button>
+          <Button color="inherit"><Link to="/contact" style={{color:'white',textDecoration: 'none'}}>Contact Us </Link></Button>
       </Toolbar>
       </AppBar>
   </div>
@@ -205,7 +210,7 @@ function CenterCard(){
                   </CardActionArea>
                   <CardActions>
                       <Button size="small" color="primary">
-                      Browse
+                      <Link to="/vector" style={{color:'blue', textDecoration: 'none'}}>View Products </Link>
                       </Button>
                   </CardActions>
               </Card>
@@ -233,7 +238,7 @@ function CenterCard(){
                   </CardActionArea>
                   <CardActions>
                       <Button size="small" color="primary">
-                      Browse
+                      <Link to="/hartex" style={{color:'blue', textDecoration: 'none'}}>View Products </Link>
                       </Button>
                   </CardActions>
               </Card>
