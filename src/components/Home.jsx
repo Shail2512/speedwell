@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import Vector from './Images/VectorX_cover.jpeg';
 import Hartex from './Images/hartex.jpg'
+import VectorLogo from './Images/vectorLogo.jpeg'
+import HartexLogo from './Images/hartexLogo.jpeg'
 import MenuIcon from '@material-ui/icons/Menu';
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
@@ -198,9 +200,10 @@ function CenterCard(){
                       title="Vector X"
                       />
                       <CardContent>
-                      <Typography gutterBottom variant="h5" component="h2">
+                      <img src={VectorLogo} width="20%" height="20%"/>
+                      {/* <Typography gutterBottom variant="h5" component="h2">
                           Vector X
-                      </Typography>
+                      </Typography> */}
                       <Typography variant="body2" color="textSecondary" component="p">
                       With the growing demand of good health and fitness, Vector X comes up with innovations each day. Whether it’s hard core fitness or trying your hands on your favorite sport, VectorX is there for you. 
                       </Typography>
@@ -225,9 +228,10 @@ function CenterCard(){
                       title="Hartex"
                       />
                       <CardContent>
-                      <Typography gutterBottom variant="h5" component="h2">
+                      <img src={HartexLogo} width="20%" height="15%"/>
+                      {/* <Typography gutterBottom variant="h5" component="h2">
                           Hartex
-                      </Typography>
+                      </Typography> */}
                       <Typography variant="body2" color="textSecondary" component="p">
                           Hartex one of the leading manufacturers and exporters of quality bicycle tyres and tubes for more than 40 years now.
                           We have the dealership of the tyres of tractors, trucks, two-wheelers, and bicycles.
