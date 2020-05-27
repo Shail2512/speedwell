@@ -123,7 +123,7 @@ const CreateDrawer = (props) => {
           <Grid container direction = "row" justify = "space-between" alignItems="center">
             <MenuIcon
               className = {classes.sideBarIcon}
-              onClick={()=>{props.updateState("true")}} />
+              onClick={()=>{props.updateState(true)}} />
 
               <Typography variant="h6" className={classes.title}>Speedwell Cycle Industries</Typography>
           </Grid>
@@ -132,14 +132,14 @@ const CreateDrawer = (props) => {
 
       <SwipeableDrawer
        open={props.drawerState}
-       onClose={()=>{props.updateState("false")}}
-       onOpen={()=>{props.updateState("true")}}>
+       onClose={()=>{props.updateState(false)}}
+       onOpen={()=>{props.updateState(true)}}>
 
          <div
            tabIndex={0}
            role="button"
-           onClick={()=>{props.updateState("false")}}
-           onKeyDown={()=>{props.updateState("true")}}>
+           onClick={()=>{props.updateState(false)}}
+           onKeyDown={()=>{props.updateState(false)}}>
           <List className = {classes.list}>
              <ListItem key = {1} button divider><Link to="/about" color="inherit">About </Link> </ListItem>
              <ListItem key = {2} button divider><Link to="/contact" color="inherit">Contact Us </Link> </ListItem>
