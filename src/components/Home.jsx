@@ -1,12 +1,12 @@
 import React,{Component} from 'react';
-import { AppBar, Toolbar, Typography, Button,List, ListItem, withStyles, SwipeableDrawer, makeStyles, Link, Grid, Card, CardActionArea, CardMedia,CardContent, CardActions} from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Button,List, ListItem, withStyles, SwipeableDrawer, makeStyles, Grid, Card, CardActionArea, CardMedia,CardContent, CardActions} from '@material-ui/core';
 import './Home.css';
 import PropTypes from 'prop-types';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import Vector from './Images/VectorX_cover.jpeg';
 import Hartex from './Images/hartex.jpg'
 import MenuIcon from '@material-ui/icons/Menu';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail';
@@ -97,16 +97,17 @@ class Home extends Component{
         return(
             <div>
                 {this.state.drawerActivate ? <CreateDrawer updateState={this.updateDrawer} drawerState={this.state.drawer}/> : <DestroyDrawer/>}
-                <Router>
                     <>
                         <Switch>
-                            <Route path="/" exact component={CenterCard}/>
-                            <Route path="/about" component={CenterCard}/>
-                            <Route path="/contact" component={ContactUs}/>
-                            <Route component={ErrorComponent}/>
+                            {/* <Route path="/" exact component={<p>Hello</p>}/>
+                            <Route path="/about" component={<p>Hello</p>}/>
+                            <Route path="/contact" component={<p>Contact</p>}/>
+                            <Route component={ErrorComponent}/> */}
+                            <Route path="/" exact><p><CenterCard/></p></Route>
+                            <Route path="/about" exact><p><CenterCard/></p></Route>
+                            <Route path="/contact" exact><ContactUs/></Route>
                         </Switch>
                     </>
-                </Router>
             </div>
 
         );
@@ -139,10 +140,9 @@ const CreateDrawer = (props) => {
            role="button"
            onClick={()=>{props.updateState("false")}}
            onKeyDown={()=>{props.updateState("true")}}>
-
           <List className = {classes.list}>
-             <ListItem key = {1} button divider><Link href="/about" color="inherit">About </Link> </ListItem>
-             <ListItem key = {2} button divider><Link href="/contact" color="inherit">Contact Us </Link> </ListItem>
+             <ListItem key = {1} button divider><Link to="/about" color="inherit">About </Link> </ListItem>
+             <ListItem key = {2} button divider><Link to="/contact" color="inherit">Contact Us </Link> </ListItem>
            </List>
 
        </div>
@@ -163,8 +163,10 @@ function DestroyDrawer(){
           <Typography variant="h6" className={classes.title}>
           Speedwell Cycle Industries
           </Typography>
-          <Button color="inherit" href="/about">About</Button>
-          <Button color="inherit" href="/contact">Contact Us</Button>
+          {/* <Button color="inherit" to="/about">About</Button>
+          <Button color="inherit" to="/contact">Contact Us</Button> */}
+          <Button color="inherit"><Link to="/about" style={{color:'white'}}>About </Link></Button>
+          <Button color="inherit"><Link to="/contact" style={{color:'white'}}>Contact Us </Link></Button>
       </Toolbar>
       </AppBar>
   </div>
