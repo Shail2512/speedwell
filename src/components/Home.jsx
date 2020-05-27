@@ -18,7 +18,7 @@ const styleSheet = makeStyles((theme) => ({
       flexGrow: 1,
     },
     card:{
-        flexGrow:1,
+        // flexGrow:1,
         minWidth:300
     },
     menuButton: {
@@ -26,7 +26,9 @@ const styleSheet = makeStyles((theme) => ({
     },
     title: {
       flexGrow: 1,
-      textAlign:'left'
+      textAlign:'left',
+      marginLeft:10,
+      paddingLeft:10,
     },
     paper: {
         padding: theme.spacing(2),
@@ -41,7 +43,6 @@ const styleSheet = makeStyles((theme) => ({
         minWidth:300,
         // alignContent: 'flex',
         alignItems:'flex-end',
-        padding:'10'
       },
       list : {
         width : 200,
@@ -95,7 +96,7 @@ class Home extends Component{
     updateDrawer = (text) => {this.setState({drawer:text})}
     render(){
         return(
-            <div>
+            <div style={{width:'100vw'}}>
                 {this.state.drawerActivate ? <CreateDrawer updateState={this.updateDrawer} drawerState={this.state.drawer}/> : <DestroyDrawer/>}
                     <>
                         <Switch>
@@ -118,7 +119,7 @@ const CreateDrawer = (props) => {
   const classes = styleSheet()
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" color="primary">
         <Toolbar className={classes.toolbar}>
           <Grid container direction = "row" justify = "space-between" alignItems="center">
             <MenuIcon
@@ -126,6 +127,9 @@ const CreateDrawer = (props) => {
               onClick={()=>{props.updateState(true)}} />
 
               <Typography variant="h6" className={classes.title}>Speedwell Cycle Industries</Typography>
+              <a href="https://wa.me/9898714218">
+              <WhatsAppIcon style={{color:"green"}}/>
+          </a>
           </Grid>
         </Toolbar>
       </AppBar>
@@ -158,7 +162,7 @@ function DestroyDrawer(){
   // const preventDefault = (event) => event.preventDefault();
   return (
   <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" color="primary">
       <Toolbar className={classes.toolBar}>
           <Typography variant="h6" className={classes.title}>
           Speedwell Cycle Industries
@@ -177,6 +181,7 @@ function CenterCard(){
   const classes=styleSheet();
   return(
   <div className={classes.root}>
+    <h3>Wholesale Supplier of VectorX and Hartex products</h3>
       <Grid container alignItems="stretch" justify="center" spacing={2} >
           <Grid item  xs={6} className = {classes.grid}>
               <Card className={classes.card}>
@@ -247,7 +252,7 @@ function ContactUs(){
           </div>
           <div>
           <PhoneIcon/> : +919898714218  
-          <a href="https://api.whatsapp.com/send?phone=+919898714218">
+          <a href="https://wa.me/9898714218">
               <WhatsAppIcon style={{color:"green"}}/>
           </a> <br/><br/>
           </div>
