@@ -45,31 +45,31 @@ class VectorCatalog extends Component {
             
         }
     }
-
     render(){
        
     return (
     <div className="VectorCatalog">
-        {console.log(this.state.products.length)}
+        {console.log(this.props)}
         <Catalog products1 = {this.state.products}/>
     </div>
   );
 }
 }
 
+
 const Catalog = (props) => {
     const classes = styleSheet()
     return (
 
         <div className={classes.root}>
-            {console.log( "Inside function"+props.products1.length)}
+            {console.log( "Inside function ",props.products1)}
             <img src={VectorLogo} width="50%" height="10%"/>
             <Grid container alignItems="stretch" justify="center" spacing={2} className={classes.root}>
             {
                         
-                        props.products1.map(
+                        props.products1 && props.products1.map(
                             p=>
-                            <Grid item  xs={4} className = {classes.grid}>
+                            <Grid item  xs={4} className = {classes.grid} key={p.id}>
                                 <Card className={classes.card}>
                                     <CardActionArea>
                                         <CardMedia
