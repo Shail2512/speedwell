@@ -223,7 +223,7 @@ function CenterCard(){
                             title="Vector X"
                             key={p.id}
                             />
-                            <p className="legend">{p.name}</p>
+                            {/* <p className="legend">{p.name}</p> */}
                             </div>
                           )
                         }
