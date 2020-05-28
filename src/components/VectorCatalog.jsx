@@ -53,39 +53,35 @@ class VectorCatalog extends Component {
         return (
     
             <div className={classes.root}>
-                {/* {console.log( "Inside function ",props.products1)} */}
                 <img src={VectorLogo} width="50%" height="10%"/>
                 <Grid container alignItems="stretch" justify="center" spacing={2} className={classes.root}>
                 {
                         
-                        <h1>{this.state.products[0].id}</h1>
-             
-                            // props.products1 && props.products1.map(
-                            //     p=>
-                            //     <h1>p.id</h1>
-                                // <Grid item  xs={4} className = {classes.grid} key={p.id}>
-                                //     <Card className={classes.card}>
-                                //         <CardActionArea>
-                                //             <CardMedia
-                                //             className={classes.media}
-                                //             component="img"
-                                //             height="400"
-                                //             image={p.image}
-                                //             // image="src\components\Images\VectorX_cover.jpeg"
-                                //             title={p.name}
-                                //             />
-                                //             <CardContent>
-                                //             <Typography gutterBottom variant="h5" component="h2">
-                                //                 {p.name}
-                                //             </Typography>
-                                //             </CardContent>
-                                //         </CardActionArea>
-        
-                                //     </Card>
-                                // </Grid>
-                            // )
-                            
-                            }
+                    this.state.products.map(
+                        p=>
+                        <Grid item  xs={4} className = {classes.grid} key={p.id}>
+                            <Card className={classes.card}>
+                                <CardActionArea>
+                                    <CardMedia
+                                    className={classes.media}
+                                    component="img"
+                                    height="400"
+                                    image={p.image}
+                                    // image="src\components\Images\VectorX_cover.jpeg"
+                                    title={p.name}
+                                    />
+                                    <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        {p.name}
+                                    </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+
+                            </Card>
+                        </Grid>
+                    )
+                    
+                    }
                 </Grid>
                 <h6>This page is under construction. Many products are still not added. Contact us for any query</h6>
             </div>
