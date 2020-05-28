@@ -23,6 +23,7 @@ import TableTennisSet from './Images/tableTennisSet.jpeg';
 import FootBall from './Images/VectorX_cover.jpeg';
 import SkateBoard from './Images/skateBoard.jpeg';
 import BicycleHelmet from './Images/helmet.jpeg';
+import GoogleMaps from './GoogleMaps'
 const styleSheet = makeStyles((theme) => ({
   main:{
     color:'red',
@@ -241,7 +242,7 @@ function CenterCard(){
                   </CardActionArea>
                   <CardActions>
                       <Button size="small" color="primary">
-                      <Link to="/vector" style={{color:'blue', textDecoration: 'none'}}>View Products </Link>
+                      <Link to="/vector" style={{color:'blue', textDecoration: 'none'}}>View More Products </Link>
                       </Button>
                   </CardActions>
               </Card>
@@ -271,7 +272,7 @@ function CenterCard(){
                   </CardActionArea>
                   <CardActions>
                       <Button size="small" color="primary">
-                      <Link to="/hartex" style={{color:'blue', textDecoration: 'none'}}>View Products </Link>
+                      <Link to="/hartex" style={{color:'blue', textDecoration: 'none'}}>View More Products </Link>
                       </Button>
                   </CardActions>
               </Card>
@@ -286,10 +287,10 @@ function ContactUs(){
       <div style={{alignContent: "center"}}>
           <h3>Contact Us : </h3>
           <div>
-            <LocationOnIcon/> : 1104, Sangita Complex, <br/> Opp. Doctor House, <br/>Ambawadi, <br/>Ahmedabad-380006, <br/>Gujarat <br/><br/>
+            <LocationOnIcon/> : 1104, Sangita Complex, <br/> Opp. Doctor House, <br/>Ellisbridge, <br/>Ahmedabad-380006, <br/>Gujarat <br/> <br/> <a href="https://www.google.com/maps/place/Speedwell+Cycle+Industries/@23.017371,72.556844,19z/data=!4m8!1m2!2m1!1s1104,sangita+complex+Opp+doctor+house,+Ellisbridge,+Ahmedabad,+Gujarat+380006!3m4!1s0x395e85356d44ae05:0xd85d9429d05424d9!8m2!3d23.0171633!4d72.557466"> See on Google Maps </a><br/><br/>
           </div>
           <div>
-          <PhoneIcon/> : +919898714218  
+          <PhoneIcon/> : +91-9428104144 / +91-9898714218 &nbsp;&nbsp; 
           <a href="https://api.whatsapp.com/send?phone=+919898714218">
               <WhatsAppIcon style={{color:"white",backgroundColor:"green"}}/>
           </a> <br/><br/>
