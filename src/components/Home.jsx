@@ -107,8 +107,8 @@ class Home extends Component{
                             <Route path="/about" component={<p>Hello</p>}/>
                             <Route path="/contact" component={<p>Contact</p>}/>
                             <Route component={ErrorComponent}/> */}
-                            <Route path="/" exact><p><CenterCard/></p></Route>
-                            <Route path="/about" exact><p><CenterCard/></p></Route>
+                            <Route path="/" exact><CenterCard/></Route>
+                            <Route path="/about" exact><CenterCard/></Route>
                             <Route path="/contact" exact><ContactUs/></Route>
                             <Route path="/vector" exact><VectorCatalog/></Route>
                             <Route path="/hartex" exact><HartexCatalog/></Route>
@@ -186,7 +186,7 @@ function CenterCard(){
   const classes=styleSheet();
   return(
   <div className={classes.root}>
-    <h3>Wholesale Supplier of Vector-X and Hartex Products</h3>
+    <div><h3>Wholesale Supplier of Vector-X and Hartex Products</h3></div>
       <Grid container alignItems="stretch" justify="center" spacing={2} >
           <Grid item  xs={6} className = {classes.grid}>
               <Card className={classes.card}>
@@ -204,7 +204,7 @@ function CenterCard(){
                       {/* <Typography gutterBottom variant="h5" component="h2">
                           Vector X
                       </Typography> */}
-                      <p style={{fontSize:20}}>India's leading brand in sports goods</p>
+                      <div><p style={{fontSize:20}}>India's leading brand in sports goods</p></div>
                       <Typography variant="body2" color="textSecondary" component="p">
                       With the growing demand of good health and fitness, Vector X comes up with innovations each day. Whether it’s hard core fitness or trying your hands on your favorite sport, VectorX is there for you. 
                       </Typography>

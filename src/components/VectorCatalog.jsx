@@ -41,15 +41,14 @@ class VectorCatalog extends Component {
                 {image:TableTennisSet, name:'Table Tennis Set'},
                 {image:FootBall, name:'Football'},
                 {image:SkateBoard, name:'Skateboard'},
-                {image:BicycleHelmet, name:'Bicycle Helmet'},
+                {image:BicycleHelmet, name:'Bicycle Helmet'}
             ]
         }
     }
     render(){
-        const {classes} = this.props;
     return (
     <div className="VectorCatalog">
-        <Catalog products = {this.state.products}/>
+        <Catalog products1 = {this.state.products}/>
     </div>
   );
 }
@@ -62,7 +61,7 @@ const Catalog = (props) => {
             <img src={VectorLogo} width="50%" height="10%"/>
             <Grid container alignItems="stretch" justify="center" spacing={2} className={classes.root}>
             {
-                        props.products.map(
+                        props.products1.map(
                             p=>
                             <Grid item  xs={4} className = {classes.grid}>
                                 <Card className={classes.card}>
