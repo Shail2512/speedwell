@@ -66,9 +66,9 @@ const Catalog = (props) => {
             <img src={VectorLogo} width="50%" height="10%"/>
             <Grid container alignItems="stretch" justify="center" spacing={2} className={classes.root}>
             {
-                console.log("Hello")
-                
-                        
+                    
+                    <h1>{props.products1[0].id}</h1>
+         
                         // props.products1 && props.products1.map(
                         //     p=>
                         //     <h1>p.id</h1>
