@@ -69,26 +69,27 @@ const Catalog = (props) => {
                         
                         props.products1 && props.products1.map(
                             p=>
-                            <Grid item  xs={4} className = {classes.grid} key={p.id}>
-                                <Card className={classes.card}>
-                                    <CardActionArea>
-                                        <CardMedia
-                                        className={classes.media}
-                                        component="img"
-                                        height="400"
-                                        image={p.image}
-                                        // image="src\components\Images\VectorX_cover.jpeg"
-                                        title={p.name}
-                                        />
-                                        <CardContent>
-                                        <Typography gutterBottom variant="h5" component="h2">
-                                            {p.name}
-                                        </Typography>
-                                        </CardContent>
-                                    </CardActionArea>
+                            <h1>p.id</h1><br/>
+                            // <Grid item  xs={4} className = {classes.grid} key={p.id}>
+                            //     <Card className={classes.card}>
+                            //         <CardActionArea>
+                            //             <CardMedia
+                            //             className={classes.media}
+                            //             component="img"
+                            //             height="400"
+                            //             image={p.image}
+                            //             // image="src\components\Images\VectorX_cover.jpeg"
+                            //             title={p.name}
+                            //             />
+                            //             <CardContent>
+                            //             <Typography gutterBottom variant="h5" component="h2">
+                            //                 {p.name}
+                            //             </Typography>
+                            //             </CardContent>
+                            //         </CardActionArea>
     
-                                </Card>
-                            </Grid>
+                            //     </Card>
+                            // </Grid>
                         )
                         
                         }
