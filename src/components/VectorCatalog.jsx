@@ -69,7 +69,7 @@ const Catalog = (props) => {
                         
                         props.products1 && props.products1.map(
                             p=>
-                            <h1>p.id</h1><br/>
+                            <h1>p.id</h1>
                             // <Grid item  xs={4} className = {classes.grid} key={p.id}>
                             //     <Card className={classes.card}>
                             //         <CardActionArea>
