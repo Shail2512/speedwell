@@ -33,21 +33,24 @@ class VectorCatalog extends Component {
     constructor(props){
         super(props)
         this.state={
-            products : 
-            [
-                {image:TennisBall, name:'Tennis Ball'},
-                {image:CricketKit, name:'Cricket Kit'},
-                {image:ShuttleCocks, name:'Shuttlecock'},
-                {image:TableTennisSet, name:'Table Tennis Set'},
-                {image:FootBall, name:'Football'},
-                {image:SkateBoard, name:'Skateboard'},
-                {image:BicycleHelmet, name:'Bicycle Helmet'}
+            products : [
+                {id:1, image:TennisBall, name:'Tennis Ball'},
+                {id:2,image:CricketKit, name:'Cricket Kit'},
+                {id:3,image:ShuttleCocks, name:'Shuttlecock'},
+                {id:4,image:TableTennisSet, name:'Table Tennis Set'},
+                {id:5,image:FootBall, name:'Football'},
+                {id:6,image:SkateBoard, name:'Skateboard'},
+                {id:7,image:BicycleHelmet, name:'Bicycle Helmet'}
             ]
+            
         }
     }
+
     render(){
+       
     return (
     <div className="VectorCatalog">
+        {console.log(this.state.products.length)}
         <Catalog products1 = {this.state.products}/>
     </div>
   );
@@ -57,10 +60,13 @@ class VectorCatalog extends Component {
 const Catalog = (props) => {
     const classes = styleSheet()
     return (
+
         <div className={classes.root}>
+            {console.log(props.products1.length)}
             <img src={VectorLogo} width="50%" height="10%"/>
             <Grid container alignItems="stretch" justify="center" spacing={2} className={classes.root}>
             {
+                        
                         props.products1.map(
                             p=>
                             <Grid item  xs={4} className = {classes.grid}>
