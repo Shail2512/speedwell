@@ -99,7 +99,7 @@ class Home extends Component{
     updateDrawer = (text) => {this.setState({drawer:text})}
     render(){
         return(
-            <div className={this.props.classes.main}>
+            <div className="Home">
                 {this.state.drawerActivate ? <CreateDrawer updateState={this.updateDrawer} drawerState={this.state.drawer}/> : <DestroyDrawer/>}
                     <>
                         <Switch>
