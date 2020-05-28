@@ -59,6 +59,7 @@ class VectorCatalog extends Component {
 
 const Catalog = (props) => {
     const classes = styleSheet()
+    const array = props.products1
     return (
 
         <div className={classes.root}>
@@ -67,7 +68,7 @@ const Catalog = (props) => {
             <Grid container alignItems="stretch" justify="center" spacing={2} className={classes.root}>
             {
                     
-                    <h1>{props.products1[0].id}</h1>
+                    <h1>{array[0].id}</h1>
          
                         // props.products1 && props.products1.map(
                         //     p=>
