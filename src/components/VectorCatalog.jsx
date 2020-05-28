@@ -63,7 +63,7 @@ const Catalog = (props) => {
     return (
 
         <div className={classes.root}>
-            {console.log( "Inside function ",props.products1)}
+            {/* {console.log( "Inside function ",props.products1)} */}
             <img src={VectorLogo} width="50%" height="10%"/>
             <Grid container alignItems="stretch" justify="center" spacing={2} className={classes.root}>
             {
