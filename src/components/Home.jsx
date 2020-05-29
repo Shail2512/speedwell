@@ -16,13 +16,7 @@ import VectorCatalog from './VectorCatalog';
 import HartexCatalog from './HartexCatalog';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import TennisBall from './Images/tennisBall.jpeg';
-import CricketKit from './Images/cricketKit.jpeg';
-import ShuttleCocks from './Images/shuttleCocks.jpeg';
-import TableTennisSet from './Images/tableTennisSet.jpeg';
-import FootBall from './Images/VectorX_cover.jpeg';
-import SkateBoard from './Images/skateBoard.jpeg';
-import BicycleHelmet from './Images/helmet.jpeg';
+import Slider from './Slider'
 import GoogleMaps from './GoogleMaps'
 const styleSheet = makeStyles((theme) => ({
   main:{
@@ -194,15 +188,7 @@ function DestroyDrawer(){
 
 function CenterCard(){
   const classes=styleSheet();
-  const products = [
-    {id:1, image:TennisBall, name:'Tennis Ball'},
-    {id:2,image:CricketKit, name:'Cricket Kit'},
-    {id:3,image:ShuttleCocks, name:'Shuttlecock'},
-    {id:4,image:TableTennisSet, name:'Table Tennis Set'},
-    {id:5,image:FootBall, name:'Football'},
-    {id:6,image:SkateBoard, name:'Skateboard'},
-    {id:7,image:BicycleHelmet, name:'Bicycle Helmet'}
-]
+  
   return(
   <div className={classes.root}>
     <div><h3>Wholesale Supplier of Vector-X and Hartex Products</h3></div>
@@ -210,25 +196,7 @@ function CenterCard(){
           <Grid item  xs={6} className = {classes.grid}>
               <Card className={classes.card}>
                   <CardActionArea>
-                      <Carousel>
-                        {
-                          products.map(
-                            p=>
-                            <div>
-                              <CardMedia
-                            className={classes.media}
-                            component="img"
-                            height="240"
-                            image={p.image}
-                            // image="src\components\Images\VectorX_cover.jpeg"
-                            title="Vector X"
-                            key={p.id}
-                            />
-                            {/* <p className="legend">{p.name}</p> */}
-                            </div>
-                          )
-                        }
-                      </Carousel>
+                    <Slider/>
                       <CardContent>
                       <img src={VectorLogo} width="40%" height="20%"/>
                       {/* <Typography gutterBottom variant="h5" component="h2">
