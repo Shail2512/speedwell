@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9c2ee677236a4901e723ec3e3c98ddb2",
+    "revision": "67e0620408d6006e8a513118b271aac1",
     "url": "/index.html"
   },
   {
-    "revision": "a7c3310044bffc1f9a59",
+    "revision": "8dde7bb7cc6579f23762",
     "url": "/static/css/2.afd40c00.chunk.css"
   },
   {
-    "revision": "dede650e08bbd837f2d4",
-    "url": "/static/css/main.5fb4e0ed.chunk.css"
+    "revision": "e07fafe23ceb3667c8bb",
+    "url": "/static/css/main.495bae0c.chunk.css"
   },
   {
-    "revision": "a7c3310044bffc1f9a59",
-    "url": "/static/js/2.a72c47a6.chunk.js"
+    "revision": "8dde7bb7cc6579f23762",
+    "url": "/static/js/2.effb37d8.chunk.js"
   },
   {
     "revision": "d7709584b84f6333d8cc790bbe53a85e",
-    "url": "/static/js/2.a72c47a6.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.effb37d8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dede650e08bbd837f2d4",
-    "url": "/static/js/main.5fb5876a.chunk.js"
+    "revision": "e07fafe23ceb3667c8bb",
+    "url": "/static/js/main.39dbc95f.chunk.js"
   },
   {
     "revision": "c815442ab336b747f527",
     "url": "/static/js/runtime-main.94a6af97.js"
+  },
+  {
+    "revision": "965804ed4bc59fe19a950de8869628e4",
+    "url": "/static/media/GoogleMap.965804ed.PNG"
   },
   {
     "revision": "45f66c63c9688fe7864c96e2ca071679",
@@ -34,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7adbb9932a22862abad524ff7b074e73",
     "url": "/static/media/cricketKit.7adbb993.jpeg"
+  },
+  {
+    "revision": "abac484651ba86df1605b692b2afce2c",
+    "url": "/static/media/hartex1.abac4846.jpg"
   },
   {
     "revision": "8561232d00129ea43eafc2cbded7eabe",
@@ -66,5 +74,17 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1e275ffa301d4bab2307b087b6cd9499",
     "url": "/static/media/vectorLogo.1e275ffa.jpeg"
+  },
+  {
+    "revision": "122605cab391e16aaa81d53372d15468",
+    "url": "/static/media/vectorX2.122605ca.jpg"
+  },
+  {
+    "revision": "30074c840c98c2137be0809e46123c8a",
+    "url": "/static/media/vectorX_1.30074c84.jpg"
+  },
+  {
+    "revision": "275e552c066f70c3c65fd347a500eae8",
+    "url": "/static/media/vectorx.275e552c.jpg"
   }
 ]);

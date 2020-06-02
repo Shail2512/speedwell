@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.5fb4e0ed.chunk.css",
-    "main.js": "/static/js/main.5fb5876a.chunk.js",
-    "main.js.map": "/static/js/main.5fb5876a.chunk.js.map",
+    "main.css": "/static/css/main.495bae0c.chunk.css",
+    "main.js": "/static/js/main.39dbc95f.chunk.js",
+    "main.js.map": "/static/js/main.39dbc95f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.94a6af97.js",
     "runtime-main.js.map": "/static/js/runtime-main.94a6af97.js.map",
     "static/css/2.afd40c00.chunk.css": "/static/css/2.afd40c00.chunk.css",
-    "static/js/2.a72c47a6.chunk.js": "/static/js/2.a72c47a6.chunk.js",
-    "static/js/2.a72c47a6.chunk.js.map": "/static/js/2.a72c47a6.chunk.js.map",
+    "static/js/2.effb37d8.chunk.js": "/static/js/2.effb37d8.chunk.js",
+    "static/js/2.effb37d8.chunk.js.map": "/static/js/2.effb37d8.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.6129c25c8efcbbda6f846f03c2f494ef.js": "/precache-manifest.6129c25c8efcbbda6f846f03c2f494ef.js",
+    "precache-manifest.8e94757491eee88a256d9976131ba867.js": "/precache-manifest.8e94757491eee88a256d9976131ba867.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.afd40c00.chunk.css.map": "/static/css/2.afd40c00.chunk.css.map",
-    "static/css/main.5fb4e0ed.chunk.css.map": "/static/css/main.5fb4e0ed.chunk.css.map",
-    "static/js/2.a72c47a6.chunk.js.LICENSE.txt": "/static/js/2.a72c47a6.chunk.js.LICENSE.txt",
+    "static/css/main.495bae0c.chunk.css.map": "/static/css/main.495bae0c.chunk.css.map",
+    "static/js/2.effb37d8.chunk.js.LICENSE.txt": "/static/js/2.effb37d8.chunk.js.LICENSE.txt",
+    "static/media/GoogleMap.PNG": "/static/media/GoogleMap.965804ed.PNG",
     "static/media/VectorX_cover.jpeg": "/static/media/VectorX_cover.45f66c63.jpeg",
     "static/media/cricketKit.jpeg": "/static/media/cricketKit.7adbb993.jpeg",
+    "static/media/hartex1.jpg": "/static/media/hartex1.abac4846.jpg",
     "static/media/hartexLogo.jpeg": "/static/media/hartexLogo.8561232d.jpeg",
     "static/media/helmet.jpeg": "/static/media/helmet.f15c617a.jpeg",
     "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
@@ -23,13 +25,16 @@
     "static/media/skateBoard.jpeg": "/static/media/skateBoard.272b40b8.jpeg",
     "static/media/tableTennisSet.jpeg": "/static/media/tableTennisSet.d80596df.jpeg",
     "static/media/tennisBall.jpeg": "/static/media/tennisBall.9251ed72.jpeg",
-    "static/media/vectorLogo.jpeg": "/static/media/vectorLogo.1e275ffa.jpeg"
+    "static/media/vectorLogo.jpeg": "/static/media/vectorLogo.1e275ffa.jpeg",
+    "static/media/vectorX2.jpg": "/static/media/vectorX2.122605ca.jpg",
+    "static/media/vectorX_1.jpg": "/static/media/vectorX_1.30074c84.jpg",
+    "static/media/vectorx.jpg": "/static/media/vectorx.275e552c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.94a6af97.js",
     "static/css/2.afd40c00.chunk.css",
-    "static/js/2.a72c47a6.chunk.js",
-    "static/css/main.5fb4e0ed.chunk.css",
-    "static/js/main.5fb5876a.chunk.js"
+    "static/js/2.effb37d8.chunk.js",
+    "static/css/main.495bae0c.chunk.css",
+    "static/js/main.39dbc95f.chunk.js"
   ]
 }
