@@ -83,7 +83,9 @@ class VectorCatalog extends Component {
                     
                     }
                 </Grid>
-                <h6>This page is under construction. Many products are still not added. Contact us for any query</h6>
+                <hr/>
+                <p style={{color:"red"}}>  The development of this site is under progress. <Link to="/contact" style={{color:'red'}}>Contact Us</Link> for more details</p>
+                {/* <h6>This page is under construction. Many products are still not added. Contact us for any query</h6> */}
             </div>
           );
     }

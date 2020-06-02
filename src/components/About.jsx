@@ -113,6 +113,7 @@ class About extends Component{
       <Link to="/vector" style={{color:'blue', textDecoration: 'none'}}>View More Products </Link>
       </Button>
       <hr/>
+      <p style={{color:"red"}}>  The development of this site is under progress. <Link to="/contact" style={{color:'red'}}>Contact Us</Link> for more details</p>
     </div>
   );
 }
