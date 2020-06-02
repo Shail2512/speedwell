@@ -16,13 +16,13 @@ const styleSheet = {
         color:'red',
       },
       grid:{
-        minWidth:300,
+        minWidth:150,
         // alignContent: 'flex',
         alignItems:'flex-end',
       },
       card:{
         // flexGrow:1,
-        minWidth:300,
+        minWidth:150,
         height:"100%",
     },
     logo:{
@@ -59,13 +59,13 @@ class VectorCatalog extends Component {
                         
                     this.state.products.map(
                         p=>
-                        <Grid item  xs={4} className = {classes.grid} key={p.id}>
+                        <Grid item  xs={2} className = {classes.grid} key={p.id}>
                             <Card className={classes.card}>
                                 <CardActionArea>
                                     <CardMedia
                                     className={classes.media}
                                     component="img"
-                                    height="400"
+                                    height="200"
                                     image={p.image}
                                     // image="src\components\Images\VectorX_cover.jpeg"
                                     title={p.name}

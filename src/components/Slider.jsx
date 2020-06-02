@@ -15,33 +15,45 @@ import TableTennisSet from './Images/tableTennisSet.jpeg';
 import FootBall from './Images/VectorX_cover.jpeg';
 import SkateBoard from './Images/skateBoard.jpeg';
 import BicycleHelmet from './Images/helmet.jpeg';
+import Hartex1 from './Images/hartex.jpg';
+import Hartex2 from './Images/hartex1.jpg';
+import VectorX1 from './Images/vectorx.jpg';
+import VectorX2 from './Images/vectorX_1.jpg';
+import VectorX3 from './Images/vectorX2.jpg';
+
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+// const products = [
+//     {id:1,image:FootBall, name:'Football'},
+//     {id:2,image:CricketKit, name:'Cricket Kit'},
+//     {id:3,image:ShuttleCocks, name:'Shuttlecock'},
+//     {id:4,image:TableTennisSet, name:'Table Tennis Set'},
+//     {id:5, imgPath:TennisBall, name:'Tennis Ball'},
+//     {id:6,image:SkateBoard, name:'Skateboard'},
+//     {id:7,image:BicycleHelmet, name:'Bicycle Helmet'}
+// ]
 
 const products = [
-    {id:1,image:FootBall, name:'Football'},
-    {id:2,image:CricketKit, name:'Cricket Kit'},
-    {id:3,image:ShuttleCocks, name:'Shuttlecock'},
-    {id:4,image:TableTennisSet, name:'Table Tennis Set'},
-    {id:5, imgPath:TennisBall, name:'Tennis Ball'},
-    {id:6,image:SkateBoard, name:'Skateboard'},
-    {id:7,image:BicycleHelmet, name:'Bicycle Helmet'}
+  {id:1,image:VectorX3, name:'Vector1'},
+  {id:2,image:VectorX2, name:'Vector2'},
+  {id:3,image:Hartex1, name:'Hartex1'},
+  {id:4,image:VectorX1, name:'Vector3'},
+  {id:5, image:Hartex2, name:'Hartex2'}
 ]
-
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 700,
+    maxWidth: 2000,
     flexGrow: 1,
     position:'center',
   },
   header: {
     display: 'flex',
     alignItems: 'center',
-    height: 50,
+    height: 0,
     paddingLeft: theme.spacing(4),
     backgroundColor: theme.palette.background.default,
   },
   img: {
-    height: 300,
+    height: 550,
     display: 'block',
     // maxWidth: 500,
     overflow: 'hidden',
@@ -49,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
     position:'center',
     marginLeft: 'auto',
     marginRight: 'auto',
-    width: '80%',
+    width: '100%',
   },
 }));
 
@@ -73,9 +85,9 @@ function SwipeableTextMobileStepper() {
 
   return (
     <div className={classes.root}>
-      <Paper square elevation={0} className={classes.header}>
+      {/* <Paper square elevation={0} className={classes.header}>
         <Typography>{products[activeStep].name}</Typography>
-      </Paper>
+      </Paper> */}
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
@@ -90,7 +102,7 @@ function SwipeableTextMobileStepper() {
           </div>
         ))}
       </AutoPlaySwipeableViews>
-      <MobileStepper
+      {/* <MobileStepper
         steps={maxSteps}
         position="static"
         variant="text"
@@ -107,7 +119,7 @@ function SwipeableTextMobileStepper() {
             Back
           </Button>
         }
-      />
+      /> */}
     </div>
   );
 }
