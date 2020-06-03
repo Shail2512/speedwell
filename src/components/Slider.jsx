@@ -44,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 2000,
     flexGrow: 1,
     position:'center',
+    // height:"60%",
   },
   header: {
     display: 'flex',
@@ -53,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.default,
   },
   img: {
-    height: 550,
+    height: '70vh',
     display: 'block',
     // maxWidth: 500,
     overflow: 'hidden',

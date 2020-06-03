@@ -57,7 +57,7 @@ const MenuItem = ({ text, name, selected }) => {
 
 const Menu = (images) => images.map(el => {
   // const { name } = el;
-  console.log(el)
+  // console.log(el)
 
   return (
     <MenuItem
@@ -125,7 +125,7 @@ VectorX(){
     <div className={classes.root}>
       <p style={{fontSize:"25px"}}>
         <b>Speedwell Cycle Industries</b> owns the wholesale supply of Sports Good's company and Tyre-Tube companies. <br/>
-        One of the leading brands in sports goods "Vector-X" is widely accepted all over the India.<br/>
+        One of the leading brands in sports goods "Vector-X" is widely accepted all over India.<br/>
 
       </p> 
     </div>

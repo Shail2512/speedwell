@@ -116,7 +116,7 @@ class Home extends Component{
     updateDrawer = (text) => {this.setState({drawer:text})}
     render(){
         return(
-            <div className="Home">
+            <div className="Home" style={{background: "linear-gradient(Black, white)" }}>
                 {this.state.drawerActivate ? <CreateDrawer updateState={this.updateDrawer} drawerState={this.state.drawer} color={this.state.color}/> : <DestroyDrawer color={this.state.color}/>}
                 {/* <About/> */}
                     <>
@@ -139,8 +139,7 @@ const CreateDrawer = (props) => {
   const color = props.color
   return (
     <div className={classes.root}>
-      {console.log(color)}
-      <AppBar position="static" style={{boxShadow:'none',color:'white'}}>
+      <AppBar style={{background:'transparent',boxShadow:'none',color:'white'}}>
         <Toolbar className={classes.toolbar}>
           <Grid container direction = "row" justify = "space-between" alignItems="center">
             <MenuIcon
@@ -184,7 +183,7 @@ const DestroyDrawer = (props) => {
   // const preventDefault = (event) => event.preventDefault();
   return (
   <div className={classes.root}>
-      <AppBar position="static" style={{boxShadow:'none',color:'white'}}>
+      <AppBar style={{background:'transparent',boxShadow:'none',color:'white'}}>
       <Toolbar className={classes.toolBar}>
           <Typography variant="h6" className={classes.title}>
           Speedwell Cycle Industries
