@@ -47,7 +47,7 @@ const MenuItem = ({ text, name, selected }) => {
     <div
       className="menu-item"
     >
-      <Paper elevation={3} className="paper">
+      <Paper elevation={5} className="paper">
          <img src = {text} alt={text} width="150" height="200"/>
           <h4>{name}</h4>
       </Paper>
@@ -100,10 +100,10 @@ class About extends Component{
     <div className="About" style={{marginTop:"4%"}}>
       <Slider/>
       {this.VectorX()}
-      <Paper elevation={5} style={{background:'lightblue', margin:'1%', textAlign:'left'}}>
-        <img src={VectorLogo} style={{margin:"1%"}} alt = "VectorLogo" height="2%" width="15%"/>
+      <Paper elevation="4" style={{background:'lightblue', margin:'1%', textAlign:'left'}}>
+        <img src={VectorLogo} style={{margin:"1%"}} alt = "VectorLogo" height="35vh" width="150vw"/>
         <Button variant="contained" color="primary" style={{margin:"1%", float:'right'}}>
-        <Link to="/vector" style={{color:'white', textDecoration: 'none'}}>View More Products </Link>
+        <Link to="/vector" style={{color:'white', textDecoration: 'none'}}>View More</Link>
         </Button>
         <ScrollMenu
             data={menu}
