@@ -50,9 +50,9 @@ const MenuItem = ({ text, name, selected }) => {
     <div
       className="menu-item"
     >
-      <Paper elevation={5} className="paper">
-         <img src = {text} alt={text} width="150" height="200"/>
-          <h4>{name}</h4>
+      <Paper elevation={5} className="paper" style={{borderRadius:"50%",alignItems:'center'}}>
+        <img src = {text} alt={text} width="150" height="200" style={{borderRadius:"50%"}}/>
+        <h4 style={{position:"center"}}>{name}</h4>
       </Paper>
     </div>
   );
@@ -107,22 +107,24 @@ class About extends Component{
       </div>
       {/* <div style={{height:'100vh'}}> */}
       {/* <Reveal effect="fadeInUp" effectOut="fadeOutLeft" delay={7000}> */}
-      <Zoom>
-      <Paper elevation="4" style={{background:'lightblue', margin:'2%', textAlign:'left',height:'80vh'}}>
+      
+        <Zoom>
+        <Paper elevation="4" style={{background:'lightblue', margin:'2%', textAlign:'left',height:'100vh'}}>
         <img src={VectorLogo} style={{margin:"1%"}} alt = "VectorLogo" height="35vh" width="150vw"/>
-        <Button variant="contained" color="primary" style={{margin:"1%", float:'right'}}>
-        <Link to="/vector" style={{color:'white', textDecoration: 'none'}}>View More</Link>
-        </Button>
-        <Typography variant="h6" align="center"> One of the leading brands in sports goods widely accepted all over India.<br/></Typography>
-        <ScrollMenu
-            data={menu}
-            arrowLeft={ArrowLeft}
-            arrowRight={ArrowRight}
-            selected={selected}
-            onSelect={this.onSelect}
-          />
-      </Paper>
-      </Zoom>
+          <Button variant="contained" color="primary" style={{margin:"1%", float:'right'}}>
+          <Link to="/vector" style={{color:'white', textDecoration: 'none'}}>View More</Link>
+          </Button>
+          <Typography variant="h6" align="center"> One of the leading brands in sports goods widely accepted all over India.<br/></Typography>
+          <ScrollMenu
+              data={menu}
+              arrowLeft={ArrowLeft}
+              arrowRight={ArrowRight}
+              selected={selected}
+              onSelect={this.onSelect}
+            />
+              </Paper>
+        </Zoom>
+
       {/* </Reveal> */}
       {/* </div> */}
       <p style={{color:"red"}}>  The development of this site is under progress. <Link to="/contact" style={{color:'red'}}>Contact Us</Link> for more details</p>
