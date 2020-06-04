@@ -271,7 +271,7 @@ function CenterCard(){
 
 function ContactUs(){
   return(
-      <div style={{alignContent: "center"}}>
+      <div style={{alignContent: "center", marginTop:"6%"}}>
           <h3>Contact Us : </h3>
           
           <div>
