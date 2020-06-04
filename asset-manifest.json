@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.a7f99234.chunk.css",
-    "main.js": "/static/js/main.c27db545.chunk.js",
-    "main.js.map": "/static/js/main.c27db545.chunk.js.map",
+    "main.js": "/static/js/main.e11159ae.chunk.js",
+    "main.js.map": "/static/js/main.e11159ae.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.94a6af97.js",
     "runtime-main.js.map": "/static/js/runtime-main.94a6af97.js.map",
     "static/css/2.afd40c00.chunk.css": "/static/css/2.afd40c00.chunk.css",
     "static/js/2.198c80dc.chunk.js": "/static/js/2.198c80dc.chunk.js",
     "static/js/2.198c80dc.chunk.js.map": "/static/js/2.198c80dc.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c520ebbcbc9430cb3dbfc0f33153af15.js": "/precache-manifest.c520ebbcbc9430cb3dbfc0f33153af15.js",
+    "precache-manifest.5b382551bb0c5c9a92f2e51c7af058db.js": "/precache-manifest.5b382551bb0c5c9a92f2e51c7af058db.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.afd40c00.chunk.css.map": "/static/css/2.afd40c00.chunk.css.map",
     "static/css/main.a7f99234.chunk.css.map": "/static/css/main.a7f99234.chunk.css.map",
@@ -22,7 +22,7 @@
     "static/media/helmet.jpeg": "/static/media/helmet.f15c617a.jpeg",
     "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
     "static/media/shuttleCocks.jpeg": "/static/media/shuttleCocks.bcb1e7e5.jpeg",
-    "static/media/skateBoard.jpeg": "/static/media/skateBoard.272b40b8.jpeg",
+    "static/media/skateBoard.jpeg": "/static/media/skateBoard.994aa9a3.jpeg",
     "static/media/tableTennisSet.jpeg": "/static/media/tableTennisSet.d80596df.jpeg",
     "static/media/tennisBall.jpeg": "/static/media/tennisBall.9251ed72.jpeg",
     "static/media/vectorLogo.jpeg": "/static/media/vectorLogo.1e275ffa.jpeg",
@@ -35,6 +35,6 @@
     "static/css/2.afd40c00.chunk.css",
     "static/js/2.198c80dc.chunk.js",
     "static/css/main.a7f99234.chunk.css",
-    "static/js/main.c27db545.chunk.js"
+    "static/js/main.e11159ae.chunk.js"
   ]
 }
