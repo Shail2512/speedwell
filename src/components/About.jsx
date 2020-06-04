@@ -97,22 +97,22 @@ class About extends Component{
     const { selected } = this.state;
     const menu = Menu(images, selected);
     return (
-    <div className="About">
+    <div className="About" style={{marginTop:"4%"}}>
       <Slider/>
       {this.VectorX()}
-      <hr/>
-      <img src={VectorLogo} alt = "VectorLogo" height="5%" width="25%"/>
-      <ScrollMenu
-          data={menu}
-          arrowLeft={ArrowLeft}
-          arrowRight={ArrowRight}
-          selected={selected}
-          onSelect={this.onSelect}
-        />
-      <Button style={{marginTop:"20"}}>
-      <Link to="/vector" style={{color:'blue', textDecoration: 'none'}}>View More Products </Link>
-      </Button>
-      <hr/>
+      <Paper elevation={5} style={{background:'lightblue', margin:'1%', textAlign:'left'}}>
+        <img src={VectorLogo} style={{margin:"1%"}} alt = "VectorLogo" height="2%" width="15%"/>
+        <Button variant="contained" color="primary" style={{margin:"1%", float:'right'}}>
+        <Link to="/vector" style={{color:'white', textDecoration: 'none'}}>View More Products </Link>
+        </Button>
+        <ScrollMenu
+            data={menu}
+            arrowLeft={ArrowLeft}
+            arrowRight={ArrowRight}
+            selected={selected}
+            onSelect={this.onSelect}
+          />
+      </Paper>
       <p style={{color:"red"}}>  The development of this site is under progress. <Link to="/contact" style={{color:'red'}}>Contact Us</Link> for more details</p>
     </div>
   );
@@ -123,7 +123,7 @@ VectorX(){
   const {classes} = this.props
   return(
     <div className={classes.root}>
-      <p style={{fontSize:"25px"}}>
+      <p style={{fontSize:"20px"}}>
         <b>Speedwell Cycle Industries</b> owns the wholesale supply of Sports Good's company and Tyre-Tube companies. <br/>
         One of the leading brands in sports goods "Vector-X" is widely accepted all over India.<br/>
 

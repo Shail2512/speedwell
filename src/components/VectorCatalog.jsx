@@ -21,10 +21,11 @@ const styleSheet = {
         minWidth:150,
         // alignContent: 'flex',
         alignItems:'flex-end',
+        // margin : '2%'
       },
       card:{
         // flexGrow:1,
-        minWidth:150,
+        minWidth:100,
         height:"100%",
     },
     logo:{
@@ -56,6 +57,7 @@ class VectorCatalog extends Component {
     
             <div className={classes.root}>
                 <img src={VectorLogo} width="50%" height="10%"/>
+                <Paper elevation={5} style={{margin:'4%', padding:'2%', textAlign:'center'}}>
                 <Grid container alignItems="stretch" justify="center" spacing={2} className={classes.root}>
                 {
                         
@@ -73,7 +75,7 @@ class VectorCatalog extends Component {
                                     title={p.name}
                                     />
                                     <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
+                                    <Typography gutterBottom variant="h6" component="h6">
                                         {p.name}
                                     </Typography>
                                     </CardContent>
@@ -85,7 +87,8 @@ class VectorCatalog extends Component {
                     
                     }
                 </Grid>
-                <hr/>
+                </Paper>
+                {/* <hr/> */}
                 <p style={{color:"red"}}>  The development of this site is under progress. <Link to="/contact" style={{color:'red'}}>Contact Us</Link> for more details</p>
                 {/* <h6>This page is under construction. Many products are still not added. Contact us for any query</h6> */}
             </div>
