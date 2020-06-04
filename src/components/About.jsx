@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Slider from './Slider'
-import {Paper, withStyles, Button} from '@material-ui/core';
+import {Paper, withStyles, Button, Typography} from '@material-ui/core';
 import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
@@ -13,7 +13,10 @@ import FootBall from './Images/VectorX_cover.jpeg';
 import SkateBoard from './Images/skateBoard.jpeg';
 import VectorLogo from './Images/vectorLogo.jpeg';
 import BicycleHelmet from './Images/helmet.jpeg';
-
+import Zoom from 'react-reveal/Zoom';
+import { Container} from 'react-floating-action-button';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import FacebookIcon from '@material-ui/icons/Facebook';
 const styleSheet = {
   root:{
     // display: 'flex',
@@ -98,13 +101,19 @@ class About extends Component{
     const menu = Menu(images, selected);
     return (
     <div className="About" style={{marginTop:"4%"}}>
-      <Slider/>
-      {this.VectorX()}
-      <Paper elevation="4" style={{background:'lightblue', margin:'1%', textAlign:'left'}}>
+      <div style={{height:'100vh'}}>
+        <Slider/>
+        {this.VectorX()}
+      </div>
+      {/* <div style={{height:'100vh'}}> */}
+      {/* <Reveal effect="fadeInUp" effectOut="fadeOutLeft" delay={7000}> */}
+      <Zoom>
+      <Paper elevation="4" style={{background:'lightblue', margin:'2%', textAlign:'left',height:'80vh'}}>
         <img src={VectorLogo} style={{margin:"1%"}} alt = "VectorLogo" height="35vh" width="150vw"/>
         <Button variant="contained" color="primary" style={{margin:"1%", float:'right'}}>
         <Link to="/vector" style={{color:'white', textDecoration: 'none'}}>View More</Link>
         </Button>
+        <Typography variant="h6" align="center"> One of the leading brands in sports goods widely accepted all over India.<br/></Typography>
         <ScrollMenu
             data={menu}
             arrowLeft={ArrowLeft}
@@ -113,11 +122,19 @@ class About extends Component{
             onSelect={this.onSelect}
           />
       </Paper>
+      </Zoom>
+      {/* </Reveal> */}
+      {/* </div> */}
       <p style={{color:"red"}}>  The development of this site is under progress. <Link to="/contact" style={{color:'red'}}>Contact Us</Link> for more details</p>
+      <Container>
+      <a href="https://api.whatsapp.com/send?phone=+919898714218">
+              <WhatsAppIcon fontSize="large" style={{color:"white",backgroundColor:"green", borderRadius:'50%', hover:{color:'black'}}}/>
+          </a>
+          <FacebookIcon fontSize="large" style={{color:"blue"}}/>
+      </Container>
     </div>
   );
 }
-
 
 VectorX(){
   const {classes} = this.props
@@ -125,7 +142,6 @@ VectorX(){
     <div className={classes.root}>
       <p style={{fontSize:"20px"}}>
         <b>Speedwell Cycle Industries</b> owns the wholesale supply of Sports Good's company and Tyre-Tube companies. <br/>
-        One of the leading brands in sports goods "Vector-X" is widely accepted all over India.<br/>
 
       </p> 
     </div>

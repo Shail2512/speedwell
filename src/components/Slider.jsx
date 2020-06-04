@@ -89,6 +89,7 @@ function SwipeableTextMobileStepper() {
       {/* <Paper square elevation={0} className={classes.header}>
         <Typography>{products[activeStep].name}</Typography>
       </Paper> */}
+      <Paper elevation={5}>
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
@@ -121,6 +122,7 @@ function SwipeableTextMobileStepper() {
           </Button>
         }
       /> */}
+      </Paper>
     </div>
   );
 }

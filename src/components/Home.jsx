@@ -20,6 +20,7 @@ import { Carousel } from 'react-responsive-carousel';
 import Slider from './Slider'
 import About from './About'
 import GoogleMaps from './GoogleMaps'
+
 const styleSheet = makeStyles((theme) => ({
   main:{
     color:'red',
@@ -147,9 +148,9 @@ const CreateDrawer = (props) => {
               onClick={()=>{props.updateState(true)}} />
 
               <Typography variant="h6" className={classes.title}>Speedwell Cycle Industries</Typography>
-              <a href="https://api.whatsapp.com/send?phone=+919898714218">
+              {/* <a href="https://api.whatsapp.com/send?phone=+919898714218">
               <WhatsAppIcon style={{color:"white",backgroundColor:"green"}}/>
-          </a>
+          </a> */}
           </Grid>
         </Toolbar>
       </AppBar>
@@ -277,7 +278,7 @@ function ContactUs(){
           <div>
           <PhoneIcon/> : +91-9428104144 / +91-9898714218 &nbsp;&nbsp; 
           <a href="https://api.whatsapp.com/send?phone=+919898714218">
-              <WhatsAppIcon style={{color:"white",backgroundColor:"green"}}/>
+              <WhatsAppIcon style={{color:"white",backgroundColor:"green",borderRadius:'50%'}}/>
           </a> <br/><br/>
           </div>
           <div>
