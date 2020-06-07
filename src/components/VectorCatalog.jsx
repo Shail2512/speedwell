@@ -7,7 +7,7 @@ import ShuttleCocks from './Images/shuttleCocks.jpeg';
 import TableTennisSet from './Images/tableTennisSet.jpeg';
 import FootBall from './Images/VectorX_cover.jpeg';
 import SkateBoard from './Images/skateBoard.jpeg';
-import VectorLogo from './Images/vectorLogo.jpeg';
+import VectorLogo from './Images/vectorLogo.png';
 import BicycleHelmet from './Images/helmet.jpeg';
 import {Link} from 'react-router-dom'
 

@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import Vector from './Images/VectorX_cover.jpeg';
 import Hartex from './Images/hartex.jpg'
-import VectorLogo from './Images/vectorLogo.jpeg'
-import HartexLogo from './Images/hartexLogo.jpeg'
+import VectorLogo from './Images/vectorLogo.png'
+import HartexLogo from './Images/hartexLogo.png'
 import GoogleMap from './Images/GoogleMap.PNG'
 import MenuIcon from '@material-ui/icons/Menu';
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';

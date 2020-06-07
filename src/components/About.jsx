@@ -11,7 +11,7 @@ import ShuttleCocks from './Images/shuttleCocks.jpeg';
 import TableTennisSet from './Images/tableTennisSet.jpeg';
 import FootBall from './Images/VectorX_cover.jpeg';
 import SkateBoard from './Images/skateBoard.jpeg';
-import VectorLogo from './Images/vectorLogo.jpeg';
+import VectorLogo from './Images/vectorLogo.png';
 import BicycleHelmet from './Images/helmet.jpeg';
 import Zoom from 'react-reveal/Zoom';
 import { Container} from 'react-floating-action-button';
@@ -85,7 +85,7 @@ const ArrowRight = Arrow({ text: '>', className: 'arrow-next' });
 class About extends Component{
   constructor(props){
     super(props)
-    this.VectorX = this.VectorX.bind(this);
+    this.Description = this.Description.bind(this);
     this.state={
       selected:0
       
@@ -102,14 +102,22 @@ class About extends Component{
     return (
     <div className="About" style={{marginTop:"4%"}}>
       <div style={{height:'100vh'}}>
+      
         <Slider/>
-        {this.VectorX()}
+        {this.Description()}
+        <div style={{position:'fixed',zIndex:'100', marginLeft:'80%'}}>
+        <a href="https://api.whatsapp.com/send?phone=+919898714218">
+                <WhatsAppIcon fontSize="large" style={{color:"white",backgroundColor:"green", borderRadius:'50%', hover:{color:'black'}}}/>
+            </a>
+          <FacebookIcon fontSize="large" style={{color:"blue"}}/>
       </div>
+      </div>
+      
       {/* <div style={{height:'100vh'}}> */}
       {/* <Reveal effect="fadeInUp" effectOut="fadeOutLeft" delay={7000}> */}
       
         <Zoom>
-        <Paper elevation="4" style={{background:'lightblue', margin:'2%', textAlign:'left',height:'100vh'}}>
+        <Paper elevation="4" style={{background:'lightblue', margin:'2%', textAlign:'left',paddingBottom:'1%'}}>
         <img src={VectorLogo} style={{margin:"1%"}} alt = "VectorLogo" height="35vh" width="150vw"/>
           <Button variant="contained" color="primary" style={{margin:"1%", float:'right'}}>
           <Link to="/vector" style={{color:'white', textDecoration: 'none'}}>View More</Link>
@@ -128,17 +136,12 @@ class About extends Component{
       {/* </Reveal> */}
       {/* </div> */}
       <p style={{color:"red"}}>  The development of this site is under progress. <Link to="/contact" style={{color:'red'}}>Contact Us</Link> for more details</p>
-      <Container>
-      <a href="https://api.whatsapp.com/send?phone=+919898714218">
-              <WhatsAppIcon fontSize="large" style={{color:"white",backgroundColor:"green", borderRadius:'50%', hover:{color:'black'}}}/>
-          </a>
-          <FacebookIcon fontSize="large" style={{color:"blue"}}/>
-      </Container>
+      
     </div>
   );
 }
 
-VectorX(){
+Description(){
   const {classes} = this.props
   return(
     <div className={classes.root}>
