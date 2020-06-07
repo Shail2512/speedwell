@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "05ca19e112b0ff427ea856e307d6a771",
+    "revision": "d710e4c9f3fe2c7561f15c915d043140",
     "url": "/index.html"
   },
   {
-    "revision": "23adbbc3d66c67826b65",
+    "revision": "388fe2a064536e207ba9",
     "url": "/static/css/2.afd40c00.chunk.css"
   },
   {
-    "revision": "d44c2fe8c001d53c37f6",
+    "revision": "806a46bcdc85c36e19ab",
     "url": "/static/css/main.a7f99234.chunk.css"
   },
   {
-    "revision": "23adbbc3d66c67826b65",
-    "url": "/static/js/2.198c80dc.chunk.js"
+    "revision": "388fe2a064536e207ba9",
+    "url": "/static/js/2.92749b78.chunk.js"
   },
   {
     "revision": "d7709584b84f6333d8cc790bbe53a85e",
-    "url": "/static/js/2.198c80dc.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.92749b78.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d44c2fe8c001d53c37f6",
-    "url": "/static/js/main.e11159ae.chunk.js"
+    "revision": "806a46bcdc85c36e19ab",
+    "url": "/static/js/main.2f5fa314.chunk.js"
   },
   {
     "revision": "c815442ab336b747f527",
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/hartex1.abac4846.jpg"
   },
   {
-    "revision": "8561232d00129ea43eafc2cbded7eabe",
-    "url": "/static/media/hartexLogo.8561232d.jpeg"
+    "revision": "2f35b3c71e3055adaa22c8cda0b80abf",
+    "url": "/static/media/hartexLogo.2f35b3c7.png"
   },
   {
     "revision": "f15c617a7aa0f7bbd42078daf9494d7e",
@@ -72,8 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/tennisBall.9251ed72.jpeg"
   },
   {
-    "revision": "1e275ffa301d4bab2307b087b6cd9499",
-    "url": "/static/media/vectorLogo.1e275ffa.jpeg"
+    "revision": "6dc87cfadd7f57e2b80ef901d677c7f5",
+    "url": "/static/media/vectorLogo.6dc87cfa.png"
   },
   {
     "revision": "122605cab391e16aaa81d53372d15468",
