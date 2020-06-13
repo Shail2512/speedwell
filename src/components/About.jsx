@@ -101,7 +101,7 @@ class About extends Component{
     const menu = Menu(images, selected);
     return (
     <div className="About" style={{marginTop:"4%"}}>
-      <div style={{height:'100vh'}}>
+      <div >
       
         <Slider/>
         {this.Description()}

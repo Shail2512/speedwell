@@ -16,10 +16,9 @@ import MailIcon from '@material-ui/icons/Mail';
 import VectorCatalog from './VectorCatalog';
 import HartexCatalog from './HartexCatalog';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import logo from './Images/speedwellLogo.ico'
 import Slider from './Slider'
 import About from './About'
-import GoogleMaps from './GoogleMaps'
 
 const styleSheet = makeStyles((theme) => ({
   main:{
@@ -146,7 +145,7 @@ const CreateDrawer = (props) => {
             <MenuIcon
               className = {classes.sideBarIcon}
               onClick={()=>{props.updateState(true)}} />
-
+              <img src={logo} alt="logo" width='6%' className={classes.title}/>
               <Typography variant="h6" className={classes.title}>Speedwell Cycle Industries</Typography>
               {/* <a href="https://api.whatsapp.com/send?phone=+919898714218">
               <WhatsAppIcon style={{color:"white",backgroundColor:"green"}}/>
@@ -186,6 +185,7 @@ const DestroyDrawer = (props) => {
   <div className={classes.root}>
       <AppBar position = 'fixed' style={{boxShadow:'none',color:'white'}}>
       <Toolbar className={classes.toolBar}>
+          <img src={logo} alt="logo" width='3%'/>
           <Typography variant="h6" className={classes.title}>
           Speedwell Cycle Industries
           </Typography>
