@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d710e4c9f3fe2c7561f15c915d043140",
+    "revision": "a59a9a8d7f7b230a38d0107ede6be4a2",
     "url": "/index.html"
   },
   {
-    "revision": "388fe2a064536e207ba9",
+    "revision": "f86f936e453dd804fe13",
     "url": "/static/css/2.afd40c00.chunk.css"
   },
   {
-    "revision": "806a46bcdc85c36e19ab",
+    "revision": "901f05989d2cf94eb772",
     "url": "/static/css/main.a7f99234.chunk.css"
   },
   {
-    "revision": "388fe2a064536e207ba9",
-    "url": "/static/js/2.92749b78.chunk.js"
+    "revision": "f86f936e453dd804fe13",
+    "url": "/static/js/2.83f5ed90.chunk.js"
   },
   {
-    "revision": "d7709584b84f6333d8cc790bbe53a85e",
-    "url": "/static/js/2.92749b78.chunk.js.LICENSE.txt"
+    "revision": "5b8b49146ea7ff4abb4f22a9d28772fe",
+    "url": "/static/js/2.83f5ed90.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "806a46bcdc85c36e19ab",
-    "url": "/static/js/main.2f5fa314.chunk.js"
+    "revision": "901f05989d2cf94eb772",
+    "url": "/static/js/main.3d06d95d.chunk.js"
   },
   {
     "revision": "c815442ab336b747f527",
@@ -62,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "994aa9a3507228f69a8a95b5cd63a106",
     "url": "/static/media/skateBoard.994aa9a3.jpeg"
+  },
+  {
+    "revision": "d9a18e0748950451c924c01704a40ae9",
+    "url": "/static/media/speedwellLogo.d9a18e07.ico"
   },
   {
     "revision": "d80596dfcddb74db8646b57bf638dab0",

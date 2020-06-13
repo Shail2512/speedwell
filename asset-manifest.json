@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.a7f99234.chunk.css",
-    "main.js": "/static/js/main.2f5fa314.chunk.js",
-    "main.js.map": "/static/js/main.2f5fa314.chunk.js.map",
+    "main.js": "/static/js/main.3d06d95d.chunk.js",
+    "main.js.map": "/static/js/main.3d06d95d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.94a6af97.js",
     "runtime-main.js.map": "/static/js/runtime-main.94a6af97.js.map",
     "static/css/2.afd40c00.chunk.css": "/static/css/2.afd40c00.chunk.css",
-    "static/js/2.92749b78.chunk.js": "/static/js/2.92749b78.chunk.js",
-    "static/js/2.92749b78.chunk.js.map": "/static/js/2.92749b78.chunk.js.map",
+    "static/js/2.83f5ed90.chunk.js": "/static/js/2.83f5ed90.chunk.js",
+    "static/js/2.83f5ed90.chunk.js.map": "/static/js/2.83f5ed90.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.afbbba9fbadd2ca166a60acec4f9eacf.js": "/precache-manifest.afbbba9fbadd2ca166a60acec4f9eacf.js",
+    "precache-manifest.05ffcc8d8f0ddf228a96c47ae0cc7115.js": "/precache-manifest.05ffcc8d8f0ddf228a96c47ae0cc7115.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.afd40c00.chunk.css.map": "/static/css/2.afd40c00.chunk.css.map",
     "static/css/main.a7f99234.chunk.css.map": "/static/css/main.a7f99234.chunk.css.map",
-    "static/js/2.92749b78.chunk.js.LICENSE.txt": "/static/js/2.92749b78.chunk.js.LICENSE.txt",
+    "static/js/2.83f5ed90.chunk.js.LICENSE.txt": "/static/js/2.83f5ed90.chunk.js.LICENSE.txt",
     "static/media/GoogleMap.PNG": "/static/media/GoogleMap.965804ed.PNG",
     "static/media/VectorX_cover.jpeg": "/static/media/VectorX_cover.45f66c63.jpeg",
     "static/media/cricketKit.jpeg": "/static/media/cricketKit.7adbb993.jpeg",
@@ -23,6 +23,7 @@
     "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
     "static/media/shuttleCocks.jpeg": "/static/media/shuttleCocks.bcb1e7e5.jpeg",
     "static/media/skateBoard.jpeg": "/static/media/skateBoard.994aa9a3.jpeg",
+    "static/media/speedwellLogo.ico": "/static/media/speedwellLogo.d9a18e07.ico",
     "static/media/tableTennisSet.jpeg": "/static/media/tableTennisSet.d80596df.jpeg",
     "static/media/tennisBall.jpeg": "/static/media/tennisBall.9251ed72.jpeg",
     "static/media/vectorLogo.png": "/static/media/vectorLogo.6dc87cfa.png",
@@ -33,8 +34,8 @@
   "entrypoints": [
     "static/js/runtime-main.94a6af97.js",
     "static/css/2.afd40c00.chunk.css",
-    "static/js/2.92749b78.chunk.js",
+    "static/js/2.83f5ed90.chunk.js",
     "static/css/main.a7f99234.chunk.css",
-    "static/js/main.2f5fa314.chunk.js"
+    "static/js/main.3d06d95d.chunk.js"
   ]
 }
