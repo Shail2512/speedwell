@@ -6,7 +6,7 @@ import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App" style={{overflowX:'hidden'}} >
+    <div className="App" style={{overflowX:'hidden', fontFamily: "Arial, Helvetica, sans-serif"}} >
       <Router>
         <Home/>
       </Router>

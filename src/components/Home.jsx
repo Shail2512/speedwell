@@ -19,7 +19,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import logo from './Images/speedwellLogo.ico'
 import Slider from './Slider'
 import About from './About'
-
+import TGICatalog from './TGICatlog'
 const styleSheet = makeStyles((theme) => ({
   main:{
     color:'red',
@@ -126,6 +126,8 @@ class Home extends Component{
                             <Route path="/contact" exact><ContactUs/></Route>
                             <Route path="/vector" exact><VectorCatalog/></Route>
                             <Route path="/hartex" exact><HartexCatalog/></Route>
+                            <Route path="/tgi" exact><TGICatalog/></Route>
+                            {/* <Route path="/tyregiant" exact><TyreGiantCatalog/></Route> */}
                         </Switch>
                     </>
             </div>
