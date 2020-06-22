@@ -125,7 +125,7 @@ class About extends Component {
                         width: "20%",
                         borderColor: '#000000'
                     }} />
-          <h2>COMPANIES</h2>
+          <h2>COMPANIES WE REPRESENT</h2>
         <div>
           <Grid container direction="row"
             justify="center"

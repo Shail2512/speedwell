@@ -7,20 +7,22 @@ import Hartex2 from './Images/hartex1.jpg';
 import VectorX1 from './Images/vectorx.jpg';
 import VectorX2 from './Images/vectorX_1.jpg';
 import VectorX3 from './Images/vectorX2.jpg';
-
+import TGI1 from './Images/TGI/TGI_Poster.jpg'
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const products_pc = [
   {id:1,image:VectorX3, name:'Vector1'},
   {id:2,image:VectorX2, name:'Vector2'},
   // {id:4,image:VectorX1, name:'Vector3'},
-  {id:5, image:Hartex2, name:'Hartex2'}
+  {id:3, image:Hartex2, name:'Hartex2'},
+  {id:4, image:TGI1, name:'TGI1'}
 ]
 const products_mobile = [
   // {id:1,image:VectorX3, name:'Vector1'},
-  {id:2,image:VectorX2, name:'Vector2'},
-  {id:4,image:VectorX1, name:'Vector3'},
-  {id:5, image:Hartex2, name:'Hartex2'}
+  {id:1,image:VectorX2, name:'Vector2'},
+  {id:2,image:VectorX1, name:'Vector3'},
+  {id:3, image:Hartex2, name:'Hartex2'},
+  {id:4, image:TGI1, name:'TGI1'}
 ]
 const useStyles = makeStyles((theme) => ({
   root: {

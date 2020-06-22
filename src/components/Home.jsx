@@ -20,6 +20,17 @@ import logo from './Images/speedwellLogo.ico'
 import Slider from './Slider'
 import About from './About'
 import TGICatalog from './TGICatlog'
+import FootballComponent from './FootballComponent';
+import CricketComponent from './CricketComponent';
+import VolleyballComponent from './VolleyballComponent';
+import BadmintonComponent from './BadmintonComponent';
+import BasketballComponent from './BasketballComponent';
+import BoxingComponent from './BoxingComponent';
+import SkatesComponent from './SkatesComponent';
+import SwimmingComponent from './SwimmingComponent';
+import BottlesComponent from './BottlesComponent';
+import RopesComponent from './RopesComponent';
+import HelmetComponent from './HelmetComponent';
 const styleSheet = makeStyles((theme) => ({
   main:{
     color:'red',
@@ -127,6 +138,22 @@ class Home extends Component{
                             <Route path="/vector" exact><VectorCatalog/></Route>
                             <Route path="/hartex" exact><HartexCatalog/></Route>
                             <Route path="/tgi" exact><TGICatalog/></Route>
+                            <Route path="/football" exact><FootballComponent/></Route>
+                            <Route path="/cricket" exact><CricketComponent/></Route>
+                            <Route path="/volleyball" exact><VolleyballComponent/></Route>
+                            <Route path="/badminton" exact><BadmintonComponent/></Route>
+                            <Route path="/basketball" exact><BasketballComponent/></Route>
+                            <Route path="/boxing" exact><BoxingComponent/></Route>
+                            <Route path="/skates" exact><SkatesComponent/></Route>
+                            <Route path="/swimming" exact><SwimmingComponent/></Route>
+                            <Route path="/bottles" exact><BottlesComponent/></Route>
+                            <Route path="/ropes" exact><RopesComponent/></Route>
+                            <Route path="/helmet" exact><HelmetComponent/></Route>
+
+
+
+
+
                             {/* <Route path="/tyregiant" exact><TyreGiantCatalog/></Route> */}
                         </Switch>
                     </>

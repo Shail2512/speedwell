@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
 import { Paper, Typography, withStyles, SwipeableDrawer, makeStyles, Grid, Card, CardActionArea, CardMedia, CardContent, CardActions } from '@material-ui/core';
 import PropTypes from 'prop-types';
-// import TennisBall from './Images/tennisBall.jpeg';
-// import CricketKit from './Images/cricketKit.jpeg';
-// import ShuttleCocks from './Images/shuttleCocks.jpeg';
-// import TableTennisSet from './Images/tableTennisSet.jpeg';
-// import FootBall from './Images/VectorX_cover.jpeg';
-// import SkateBoard from './Images/skateBoard.jpeg';
 import VectorLogo from './Images/vectorLogo.png';
-// import BicycleHelmet from './Images/helmet.jpeg';
 import Badminton from './Images/badminton_f.PNG';
 import Basketball from './Images/basketball_f.PNG';
 import Football from './Images/football_f.PNG';
@@ -19,13 +12,14 @@ import Volleyball from './Images/volleyball_f.PNG';
 import Swimming from './Images/swimming_f.PNG'
 import Ropes from './Images/ropes_f.PNG';
 import Bottles from './Images/bottles_f.PNG';
+import Helmet from './Images/helmet_f.PNG'
 import { Link } from 'react-router-dom'
 import vectorAd from './Images/vectorad.mp4'
 const styleSheet = {
     root: {
         flexGrow: 1,
         color: 'red',
-        paddingTop: '5%',
+        marginTop: '80px'
     },
     grid: {
         minWidth: 150,
@@ -49,15 +43,17 @@ class VectorCatalog extends Component {
         this.Catalog = this.Catalog.bind(this);
         this.state = {
             products: [
-                { id: 1, image: Cricket, name: 'Cricket' },
-                { id: 2, image: Football, name: 'Football' },
-                { id: 3, image: Volleyball, name: 'Volleyball' },
-                { id: 4, image: Badminton, name: 'Badminton' },
-                { id: 5, image: Basketball, name: 'Basketball' },
-                { id: 6, image: Boxing, name: 'Boxing' },
-                { id: 7, image: Skates, name: 'Skates' },
-                { id: 8, image: Swimming, name: 'Swimming' },
-                { id: 9, image: Bottles, name: 'Bottles' }
+                { id: 1, image: Cricket, name: 'Cricket', link:"/cricket" },
+                { id: 2, image: Football, name: 'Football', link:"/football"},
+                { id: 3, image: Volleyball, name: 'Volleyball',link:"/volleyball"},
+                { id: 4, image: Badminton, name: 'Badminton', link:"/badminton" },
+                { id: 5, image: Basketball, name: 'Basketball', link:"/basketball" },
+                { id: 6, image: Boxing, name: 'Boxing', link:"/boxing" },
+                { id: 7, image: Skates, name: 'Skates', link:"/skates" },
+                { id: 8, image: Swimming, name: 'Swimming', link:"/swimming" },
+                { id: 9, image: Bottles, name: 'Bottles', link:"/bottles" },
+                { id: 10, image: Ropes, name: 'Ropes', link:"/ropes" },
+                { id: 11, image: Helmet, name: 'Helmet', link:"/helmet" }
             ]
 
         }
@@ -81,6 +77,7 @@ class VectorCatalog extends Component {
                             this.state.products.map(
                                 p =>
                                     <Grid item xs={2} className={classes.grid} key={p.id}>
+                                        <Link to={p.link} style={{textDecoration:'none', color:'black'}}>
                                         <Card className={classes.card}>
                                             <CardActionArea>
                                                 <CardMedia
@@ -97,8 +94,9 @@ class VectorCatalog extends Component {
                                                     </Typography>
                                                 </CardContent>
                                             </CardActionArea>
-
+                                            
                                         </Card>
+                                        </Link>
                                     </Grid>
                             )
 
