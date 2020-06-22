@@ -31,7 +31,7 @@ class SkatesComponent extends Component {
         return (
             <div className="SkatesComponent" style={{marginTop:'10vh'}}>
                 <div style={{fontSize:'40px'}}>
-                    <strong>Basketball</strong>
+                    <strong>Skates</strong>
                 </div>
                 {
                     this.state.products.map(p => 
