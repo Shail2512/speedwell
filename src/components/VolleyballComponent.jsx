@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Paper, Typography, withStyles, SwipeableDrawer, makeStyles, Grid, Card, CardActionArea, CardMedia, CardContent, CardActions } from '@material-ui/core';
 import PropTypes from 'prop-types';
-import F1 from './Images/Display/Volleyball_A.PNG'
+import F2 from './Images/Display/Volleyball_A.PNG'
+import F1 from './Images/Display/Volleyball_Speed.PNG'
 const styleSheet = {
     root: {
         flexGrow: 1,
@@ -29,7 +30,8 @@ class VolleyballComponent extends Component {
         super(props)
         this.state = {
             products: [
-                { id: 1, image: F1, name: 'F1' }
+                { id: 1, image: F1, name: 'F1' },
+                { id: 1, image: F2, name: 'F2' }
             ]
 
         }
